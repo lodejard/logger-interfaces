@@ -101,7 +101,10 @@ namespace StepTwo
 namespace StepThree
 {
     // after a control-dot codefix on the `Logger.LogInformation(...);` call site
-    // warning "Create strongly typed log methods", probably on "entire project" or "entire solution"
+    // warning "Create strongly typed log methods"
+    // 
+    // possibly on "entire project" or "entire solution" if log messages already have EventId argument
+    // or one at a time to fix method name on each call site as you go
 
     public interface IPaymentCalculatorLogger : ILogger<PaymentCalculator>
     {
